@@ -1,0 +1,626 @@
+/* styles.css */
+
+/* Global Styles */
+
+/* Add styles to center the content and improve readability */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Customize font and text color */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  /* Dark gray or black text color */
+}
+
+body {
+  /* Set background color */
+  /* background-color: #f8f8f8; Light gray or off-white background color */
+
+  /* Optionally, you can use a background image or gradient */
+  /* Uncomment and customize as needed */
+
+  /* Using a Background Image */
+  /* background-image: url('/Images/photo-1518655048521-f130df041f66.jpeg'); 
+    background-size: 100%;
+    background-position: center center; */
+
+  /* Using a Gradient Background */
+  background: linear-gradient(to bottom, #f8f8f8, #c7c3c3);
+
+  /* Optionally, add subtle pattern or texture */
+  /* background-image: url('/Images/photo-1518655048521-f130df041f66.jpeg');
+    background-repeat: repeat;  */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* CSS Styling for Navigation Bar */
+#navbar {
+  background-color: #1f446b;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  z-index: 100;
+}
+
+#navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo img {
+  width: 30%;
+  height: 20%;
+  margin-right: 10px;
+}
+
+.nav-logo h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #0056b3;
+}
+
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 6px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #3176c0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+
+/* Header styles */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-content h1 {
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+.header-content p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Home/About Section styles */
+#home {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.profile-info img {
+  margin-top: 70px;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section styles */
+#portfolio {
+  padding: 40px 0;
+}
+
+#portfolio h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Project cards */
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Skills Section styles */
+#skills {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#skills ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#skills li {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+
+
+/* Work Experience Section styles */
+#work-experience {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#work-experience h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.experience {
+  margin-bottom: 30px;
+}
+
+.experience h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.experience p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.experience ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+
+
+
+/* CSS Styling for Passion and Hobbies Section */
+#passion-hobbies {
+  padding: 40px 0;
+
+}
+
+#passion-hobbies h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hobby-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.hobby-card {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.hobby-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.hobby-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hobby-card p {
+  font-size: 14px;
+  color: #444;
+}
+
+
+/* Education Section styles */
+#education {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#education h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Contact Section styles */
+#contact {
+  padding: 40px 0;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #222222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Hamburger menu icon styles */
+.hamburger-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile navigation menu styles */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-menu a:hover {
+  color: #ccc;
+}
+
+
+/* Portfolio Section styles */
+#portfolio {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Project cards styles */
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* CSS Styling for Education Section */
+#education {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#education h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.education-item {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.education-item h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.education-item p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Hide the details of collapsed education items */
+.education-item.collapsed p {
+  display: none;
+}
+
+/* CSS Styling for Contact Section */
+#contact {
+  text-align: center;
+  padding: 40px 0;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.contact-details {
+  margin-top: 30px;
+}
+
+.contact-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* CSS Styling for Footer Section */
+#footer {
+  background-color: #837b83;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #007bff;
+}
+
+#footer p {
+  margin-top: 20px;
+  font-size: 14px;
+}
